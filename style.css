@@ -5,6 +5,7 @@
   font-family: "Nunito", sans-serif;
 }
 body{ 
+  width : 100vw;
   overflow-x :hidden; 
   } 
 nav {
