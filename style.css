@@ -110,13 +110,9 @@ nav a:hover::before {
     padding: 5px;
   } */
 }
-/* for adding shadows */
-.shadow{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0px 6px 20px rgba(0, 0, 0, 0.5);
-}
 
 /* ---------course------------ */
-#course {
+.course {
   padding-top: 100px;
   /* display:flex; */
   text-align: center;
@@ -125,7 +121,7 @@ nav a:hover::before {
   margin: auto;
 }
 
-#course h1 {
+.course h1 {
   font-size: 40px;
   padding-bottom: 20px;
 }
@@ -138,6 +134,7 @@ nav a:hover::before {
   padding: 20px;
   margin-bottom: 100px;
 }
+
 .box h3 {
   padding-bottom: 10px;
 }
@@ -169,7 +166,7 @@ nav a:hover::before {
 
 @media only screen and (max-width:480px){
   
-  #course h1 {
+  .course h1 {
     font-size: 35px;
   }
   .boxes{
@@ -212,7 +209,6 @@ nav a:hover::before {
 .campus_col{
   margin: 15px;
   position: relative;
-  border-radius: 15px;
 }
 
 .campus_col img{
@@ -220,7 +216,6 @@ nav a:hover::before {
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  object-fit:fill;
 }
 
 .layer{
@@ -389,7 +384,7 @@ nav a:hover::before {
 
 /* -------------contact_us---------------- */
 
-#contact_us {
+.contact_us {
   margin: 100px auto;
   padding: 80px 0;
   width: 80%;
@@ -404,7 +399,7 @@ nav a:hover::before {
   justify-content: center;
 }
 
-#contact_us h1 {
+.contact_us h1 {
   color: white;
   font-size: 50px;
   font-weight: bold;
@@ -412,7 +407,7 @@ nav a:hover::before {
   text-align: center;
 }
 
-#contact_us a {
+.contact_us a {
   width: 10%;
   font-weight: bold;
   margin-top: 30px;
@@ -426,27 +421,27 @@ nav a:hover::before {
 }
 
 @media only screen and (max-width:768px){
-  #contact_us a {
+  .contact_us a {
     font-size: 15px;
     width:25%;    
   }
 }
 @media only screen and (max-width:480px){
-  #contact_us h1{
+  .contact_us h1{
     font-size:30px;
     margin:10px;
   }
 }
 
 /* --------------footer----------------- */
-#footer {
+.footer {
   text-align: center;
   background-color: rgb(28, 28, 28);
   color:white;
   overflow: hidden;
 }
 
-#footer h4 {
+.footer h4 {
   /* padding-top: 1px; */
   margin-top: 25px;
   font-weight: 600;
@@ -454,7 +449,7 @@ nav a:hover::before {
   display: inline-block;
 }
 
-#footer p {
+.footer p {
   margin-bottom: 25px;
   width:80%;
   margin: auto;
