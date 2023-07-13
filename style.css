@@ -1,26 +1,19 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-body {
-  width: 100vw;
-  overflow-x: hidden;
-}
-.nav-links {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  /* float: right; */
+
+nav {
+  float: right;
 }
 
-.nav-links ul {
+nav ul {
   list-style-type: none;
   display: flex;
 }
 
-.nav-links ul li::after {
+nav ul li::after {
   content: "";
   display: block;
   width: 0%;
@@ -28,7 +21,7 @@ body {
   background-color: rgb(219, 65, 65);
 }
 
-.nav-links ul li:hover::after {
+nav ul li:hover::after {
   width: 80%;
   border-radius: 10px;
   margin: auto;
@@ -44,19 +37,19 @@ header {
   background-size: cover;
 }
 
-.nav-links a {
+nav a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
   color: white;
   padding: 10px;
 }
 
-/* nav a:hover::before {
+nav a:hover::before {
   content: " ";
   width: 100px;
   height: 100px;
   background-color: black;
-} */
+}
 
 .textbox {
   color: white;
@@ -78,7 +71,7 @@ header {
 .textbox a {
   margin-top: 20px;
   color: white;
-  font-weight: 400;
+  font-weight:400;
   border: 1px solid white;
   padding: 8px;
   border-radius: 5px;
@@ -92,71 +85,33 @@ header {
 }
 
 .logo {
-  min-width: 150px;
+  min-width:150px;
   width: 20%;
 }
-.fa-solid.fa-bars::before,
-.fa-solid.fa-xmark::before {
-  display: none;
-}
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width:480px) {
   .textbox h1 {
     font-size: 40px;
-    padding-bottom: 20px;
+     padding-bottom: 20px; 
   }
-  /* nav{  /*For placing the navbar in center
+  nav{  /*For placing the navbar in center*/
     margin-top: 20px;
     float:none;
     width:100%;
-    margin: auto;
+    /* margin: auto; */
   }
   nav ul{
     justify-content: space-evenly;
     width:90%;
     margin: auto;
+  }
+  /* nav a {
+    font-size: 15px;
+    padding: 5px;
   } */
-  .fa-solid.fa-bars::before,
-  .fa-solid.fa-xmark::before {
-    display: block;
-  }
-  .fa-solid {
-    color: white;
-    font-size: 25px;
-  }
-  .fa-bars {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    /* margin-right: 20px; */
-  }
-  .fa-xmark {
-    margin: 10px 15px;
-    z-index: 2;
-  }
-  .nav-links {
-    z-index: 1;
-    width: 60vw;
-    height: 100vh;
-    background-color: rgb(219, 65, 65);
-    position: absolute;
-    top: 0;
-    right: -400px;
-    transition: 1s;
-  }
-  .nav-links ul {
-    /* justify-content: center; */
-    flex-direction: column;
-    padding: 70px 30px;
-    font-size: 75%;
-    /* max-width:50%; */
-    /* margin: auto auto; */
-  }
-  .nav-links ul li {
-    margin-bottom: 10px;
-  }
 }
 /* for adding shadows */
-.shadow {
+.shadow{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0px 6px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -176,7 +131,7 @@ header {
 }
 
 .box {
-  width: 30%;
+  width: 20%;
   border: 1px solid rgb(254, 206, 171);
   background-color: rgb(252, 205, 171);
   border-radius: 15px;
@@ -190,16 +145,16 @@ header {
 .boxes {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 768px) {
-  .boxes {
+@media only screen and (max-width:768px){
+  .boxes{
     margin-top: 30px;
     flex-direction: column;
   }
-  .box {
-    width: 80%;
+  .box{
+    width:80%;
     margin: auto;
     margin-bottom: 40px;
     padding: 50px 30px;
@@ -212,15 +167,16 @@ header {
   } */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width:480px){
+  
   #course h1 {
     font-size: 35px;
   }
-  .boxes {
+  .boxes{
     flex-direction: column;
   }
-  .box {
-    width: 85%;
+  .box{
+    width:85%;
     margin-bottom: 25px;
     padding: 50px 30px;
   }
@@ -249,62 +205,62 @@ header {
   margin: auto;
   margin-top: 60px;
   margin-bottom: 50px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* border: 2px solid red; */
 }
 
-.campus_col {
+.campus_col{
   margin: 15px;
   position: relative;
   border-radius: 15px;
 }
 
-.campus_col img {
+.campus_col img{
   /* border: 2px solid green; */
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit:fill;
 }
 
-.layer {
-  background-color: rgba(219, 65, 65, 0.7);
+.layer{
+  background-color: rgba(219, 65, 65 ,0.7);
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   border-radius: 15px;
   /* margin: auto; */
-  position: absolute;
-  top: 0;
+  position:absolute;
+  top: 0; 
   left: 0;
   opacity: 0;
   /* z-index: 1; */
 }
-.layer h3 {
+.layer h3{
   text-align: center;
   margin: auto;
   font-size: 28px;
   color: white;
 }
 
-.layer:hover {
-  opacity: 1;
+.layer:hover{
+  opacity:1;
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px){
   .campus_img {
-    flex-direction: column;
+    flex-direction:column;
   }
-  .campus {
-    width: 80%;
+  .campus{
+    width:80%;
     margin: auto;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .layer h3 {
+@media only screen and (max-width:480px){
+  .layer h3{
     font-size: 24px;
   }
 }
@@ -324,7 +280,7 @@ header {
   margin-top: 60px;
   margin-bottom: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .fimg {
@@ -342,26 +298,27 @@ header {
   padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-  .facilities {
-    width: 80%;
-    margin: auto;
+@media only screen and (max-width:768px){
+  .facilities{
+    width:80%;
+    margin:auto;
   }
-  .f_box {
-    margin-top: 10px;
-    flex-direction: column;
+  .f_box{
+    /* width:80%; */
+    margin-top:10px;
+    flex-direction:column;
   }
-  .fimg {
-    width: 80%;
-    margin: auto;
+  .fimg{
+    width:80%;
+    margin:auto;
   }
-  .fimg img {
+  .fimg img{
     margin-top: 50px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .facilities {
-    width: 90%;
+@media only screen and (max-width:480px){
+  .facilities{
+    width:90%;
   }
 }
 
@@ -415,19 +372,19 @@ header {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-  .reviews {
-    width: 90%;
-    margin: auto;
-  }
-  .rating {
-    flex-direction: column;
-  }
-  .review {
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-  }
+@media only screen and (max-width:768px){
+.reviews{
+  width:90%;
+  margin:auto;
+}
+.rating{
+  flex-direction: column;
+}
+.review{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
 }
 
 /* -------------contact_us---------------- */
@@ -449,17 +406,18 @@ header {
 
 #contact_us h1 {
   color: white;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
-  margin: 0px 10px;
+  margin-top: 50px;
   text-align: center;
 }
 
 #contact_us a {
-  width: 30%;
+  width: 10%;
   font-weight: bold;
+  margin-top: 30px;
   margin: auto;
-  margin-top: 10px;
+  /* margin-top:50px; */
   border: 2px solid white;
   padding: 20px;
   color: white;
@@ -467,19 +425,16 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px){
   #contact_us a {
     font-size: 15px;
-    width: 50%;
-  }
-  #contact_us h1 {
-    font-size: 30px;
+    width:25%;    
   }
 }
-@media only screen and (max-width: 480px) {
-  #contact_us h1 {
-    font-size: 25px;
-    margin: 10px;
+@media only screen and (max-width:480px){
+  #contact_us h1{
+    font-size:30px;
+    margin:10px;
   }
 }
 
@@ -487,7 +442,7 @@ header {
 #footer {
   text-align: center;
   background-color: rgb(28, 28, 28);
-  color: white;
+  color:white;
   overflow: hidden;
 }
 
@@ -501,7 +456,7 @@ header {
 
 #footer p {
   margin-bottom: 25px;
-  width: 80%;
+  width:80%;
   margin: auto;
 }
 
