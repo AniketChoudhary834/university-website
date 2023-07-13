@@ -19,13 +19,17 @@
     <header>
       <img src="images\logo.png" class="logo" alt="logo" />
       <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#footer">ABOUT</a></li>
-          <li><a href="#course">COURSE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#contact_us">CONTACT</a></li>
-        </ul>
+        <div class="nav-links">
+          <i class="fa-solid fa-xmark" onclick="close_navbar()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#footer">ABOUT</a></li>
+            <li><a href="#course">COURSE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#contact_us">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="show_navbar()"></i>
       </nav>
       <div class="textbox">
         <h1>World's Biggest University</h1>
@@ -44,7 +48,7 @@
       <h1>Courses We Offer</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <div class="boxes">
-        <div class="box shadow" >
+        <div class="box shadow">
           <h3>Intermediate</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -78,19 +82,19 @@
       </p>
       <div class="campus_img">
         <div class="campus_col">
-          <img src="images/london.png" alt="london" />
+          <img src="/images/london.png" alt="london" />
           <div class="layer">
             <h3>LONDON</h3>
           </div>
         </div>
         <div class="campus_col">
-          <img src="images/newyork.png" alt="NY" />
+          <img src="/images/newyork.png" alt="NY" />
           <div class="layer">
             <h3>NEW YORK</h3>
           </div>
         </div>
         <div class="campus_col">
-          <img src="images/washington.png" alt="washington" />
+          <img src="/images/washington.png" alt="washington" />
           <div class="layer">
             <h3>WASHINGTON</h3>
           </div>
@@ -105,7 +109,7 @@
       </p>
       <div class="f_box">
         <div class="fimg">
-          <img src="images/library.png" alt="Library" class="shadow" />
+          <img src="/images/library.png" alt="Library" class="shadow" />
           <h2>World Class Library</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -113,7 +117,7 @@
           </p>
         </div>
         <div class="fimg">
-          <img src="images/basketball.png" alt="Basketball" class="shadow" />
+          <img src="/images/basketball.png" alt="Basketball" class="shadow" />
           <h2>Largest Playground</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -121,7 +125,7 @@
           </p>
         </div>
         <div class="fimg">
-          <img src="images/cafeteria.png" alt="cafeteria" class="shadow" />
+          <img src="/images/cafeteria.png" alt="cafeteria" class="shadow" />
           <h2>Tasty and Healthy food</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -191,5 +195,6 @@
         <i class="fa-brands fa-linkedin"></i>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
