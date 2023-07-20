@@ -5,7 +5,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-html, body {   /*I thought it will work but i didn't :( */
+html, body {   
   max-width: 100vw;     /*also tried 100vw and 100%*/
   overflow-x: hidden;
 }
