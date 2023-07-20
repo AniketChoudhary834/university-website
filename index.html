@@ -19,13 +19,17 @@
     <header>
       <img src="images\logo.png" class="logo" alt="logo" />
       <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COURSE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+        <div class="nav-links">
+          <i class="fa-solid fa-xmark" onclick="close_navbar()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#footer">ABOUT</a></li>
+            <li><a href="#course">COURSE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#contact_us">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="show_navbar()"></i>
       </nav>
       <div class="textbox">
         <h1>World's Biggest University</h1>
@@ -40,11 +44,11 @@
         <a href="#">Learn More</a>
       </div>
     </header>
-    <section class="course">
+    <section id="course">
       <h1>Courses We Offer</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <div class="boxes">
-        <div class="box">
+        <div class="box shadow">
           <h3>Intermediate</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -52,7 +56,7 @@
             Numquam, consequuntur totam nam reprehenderit quos alias?
           </p>
         </div>
-        <div class="box">
+        <div class="box shadow">
           <h3>Degree</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -60,7 +64,7 @@
             Numquam, consequuntur totam nam reprehenderit quos alias?
           </p>
         </div>
-        <div class="box">
+        <div class="box shadow">
           <h3>Post Graduation</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
@@ -105,7 +109,7 @@
       </p>
       <div class="f_box">
         <div class="fimg">
-          <img src="/images/library.png" alt="Library" />
+          <img src="/images/library.png" alt="Library" class="shadow" />
           <h2>World Class Library</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -113,7 +117,7 @@
           </p>
         </div>
         <div class="fimg">
-          <img src="/images/basketball.png" alt="Basketball" />
+          <img src="/images/basketball.png" alt="Basketball" class="shadow" />
           <h2>Largest Playground</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -121,7 +125,7 @@
           </p>
         </div>
         <div class="fimg">
-          <img src="/images/cafeteria.png" alt="cafeteria" />
+          <img src="/images/cafeteria.png" alt="cafeteria" class="shadow" />
           <h2>Tasty and Healthy food</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -137,7 +141,7 @@
         quidem?
       </p>
       <div class="rating">
-        <div class="review">
+        <div class="review shadow">
           <img src="images/user1.jpg" alt="user1" />
           <div class="rev_con">
             <p>
@@ -153,7 +157,7 @@
             <i class="fa-regular fa-star"></i>
           </div>
         </div>
-        <div class="review">
+        <div class="review shadow">
           <img src="images/user2.jpg" alt="user2" />
           <div class="rev_con">
             <p>
@@ -171,14 +175,14 @@
         </div>
       </div>
     </section>
-    <section class="contact_us">
+    <section id="contact_us">
       <h1>
         Enroll For Our Various Online Courses<br />
         Anywhere From The World
       </h1>
       <a href="#">CONTACT US</a>
     </section>
-    <section class="footer">
+    <section id="footer">
       <h4>About Us</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga<br />est
@@ -191,5 +195,6 @@
         <i class="fa-brands fa-linkedin"></i>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
