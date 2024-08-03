@@ -4,12 +4,7 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-/* *{
-   ---GHOST CSS---
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -18,7 +13,6 @@ html, body {
   position: absolute;
   top: 30px;
   right: 30px;
-  /* float: right; */
 }
 
 .nav-links ul {
@@ -56,13 +50,6 @@ header {
   color: white;
   padding: 10px;
 }
-
-/* nav a:hover::before {
-  content: " ";
-  width: 100px;
-  height: 100px;
-  background-color: black;
-} */
 
 .textbox {
   color: white;
@@ -110,17 +97,7 @@ header {
     font-size: 40px;
     padding-bottom: 20px;
   }
-  /* nav{  /*For placing the navbar in center
-    margin-top: 20px;
-    float:none;
-    width:100%;
-    margin: auto;
-  }
-  nav ul{
-    justify-content: space-evenly;
-    width:90%;
-    margin: auto;
-  } */
+ 
   .fa-solid.fa-bars::before,
   .fa-solid.fa-xmark::before {
     display: block;
@@ -133,14 +110,12 @@ header {
     position: absolute;
     top: 15px;
     right: 30px;
-    /* margin-right: 20px; */
   }
   .fa-xmark {
     margin: 10px 15px;
     z-index: 2;
   }
   .nav-links {
-    /* visibility: hidden; */
     z-index: 1;
     width: 60vw;
     height: 100vh;
@@ -151,12 +126,9 @@ header {
     transition: 1s;
   }
   .nav-links ul {
-    /* justify-content: center; */
     flex-direction: column;
     padding: 70px 30px;
     font-size: 75%;
-    /* max-width:50%; */
-    /* margin: auto auto; */
   }
   .nav-links ul li {
     margin-bottom: 10px;
@@ -211,12 +183,6 @@ header {
     margin-bottom: 40px;
     padding: 50px 30px;
   }
-  /* .box h3{
-    font-size: 35px;
-  }
-  .box p{
-    font-size:24px;
-  } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -231,18 +197,11 @@ header {
     margin-bottom: 25px;
     padding: 50px 30px;
   }
-  /* .box h3{
-    font-size: 25px;
-  }
-  .box p{
-    font-size:20px;
-  } */
 }
 
 /* ----------campus------------ */
 .campus {
   text-align: center;
-  /* justify-content: center; */
 }
 
 .campus h1 {
@@ -256,8 +215,7 @@ header {
   margin: auto;
   margin-top: 60px;
   margin-bottom: 50px;
-  justify-content: space-around;
-  /* border: 2px solid red; */
+  justify-content: space-aroun
 }
 
 .campus_col {
@@ -267,7 +225,6 @@ header {
 }
 
 .campus_col img {
-  /* border: 2px solid green; */
   border-radius: 15px;
   width: 100%;
   height: 100%;
@@ -281,12 +238,10 @@ header {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  /* margin: auto; */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  /* z-index: 1; */
 }
 .layer h3 {
   text-align: center;
@@ -389,26 +344,22 @@ header {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
-  /* border: 5px solid black; */
 }
 
 .review {
   width: 40%;
   padding: 15px;
-  /* border: 5px solid rgb(255, 0, 0); */
   display: flex;
   background-color: rgb(243, 203, 152);
   border-radius: 15px;
 }
 
 .rev_img {
-  /* border: 5px solid rgb(33, 255, 88); */
   width: 100%;
 }
 
 .review img {
   height: 70px;
-  /* width:20%; */
   margin-right: 20px;
   border-radius: 50%;
 }
@@ -447,7 +398,6 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/banner2.jpg);
   background-size: cover;
-  /* background-position: center; */
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -499,7 +449,6 @@ header {
 }
 
 #footer h4 {
-  /* padding-top: 1px; */
   margin-top: 25px;
   font-weight: 600;
   margin-bottom: 25px;
